@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>祠スイーパー</title>
+        <meta property="og:url" content="https://furandon-pig.github.io/hokora-sweeper/" />
+        <meta property="og:title" content="hokora-sweeper" />
+        <meta property="og:image" content="https://furandon-pig.github.io/hokora-sweeper/hokora-sweeper-ogp.png" />
+        <meta property="og:description" content="祠スイーパーです。あの祠を壊したんか！感を味わえます。" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@furandon_pig" />
+    </head>
+    <body>
+        <center>
+            <h1>祠スイーパー</h1>
+            <div>
+                右クリックで「祠」マークをつけることができます。<br>
+                祠を壊してしまうと画面下にあるメッセージがランダムで表示されます。
+            </div>
+            <div>
+                <button id="reset" onClick="app.init()">祠を直す</button>
+                <label>
+                    <input id="enable_debug" onClick="app.debug()" type="checkbox">祠を透視する
+                </label>
+            </div>
+            <div id='board'></div>
+            <div id="debug" style="margin-top: 30px;">
+                <div id="bomb_debug"></div>
+            </div>
+            <div>
+                <textarea id="msg" rows="6" style="width: 100%;">
+あの祠を壊したんか！もうダメじゃ！
+あー、あの祠壊しちゃったの？それじゃもうダメだね。君、たぶん死ぬ。
+「あの祠壊しちゃったの？」「壊しちゃったの…？」「じゃあお兄さん死んじゃうね…」「死んじゃうね」「悲しいね」「可哀想だね」「「ねー」」</textarea>
+            </div>
+        </center>
+        <script src="app.js"></script>
+    </body>
+</html>
+
